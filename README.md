@@ -16,8 +16,8 @@ Repositório destinádo a centralizar as animações e designs implementados em 
 
 - [x] [Monstercard](./monstercard) - Animação usando transitions e @keyframes <br/>
 
-![Monstercard](https://share.getcloudapp.com/7KuLplgq)
 
+<img src="./.github/monstercard.gif" alt="Monstercard" width="800" >
 
 <br/>
 <br/>
