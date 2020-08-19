@@ -17,7 +17,7 @@ Repositório destinádo a centralizar as animações e designs implementados em 
 - [x] [Monstercard](./monstercard) - Animação usando transitions e @keyframes <br/>
 
 
-<img src="./.github/monstercard.gif" alt="Monstercard" width="800" >
+<img src="./monstercard/.github/monstercard.gif" alt="Monstercard" width="800" >
 
 <br/>
 <br/>
