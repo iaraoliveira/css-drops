@@ -1,0 +1,71 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    vertical-align:baseline;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #333;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 65px;
+    margin-top: 1.7em;
+    display: flex;
+}
+
+.monstercard {
+    color: #f5f5f4;
+    font-family: 'Alata', sans-serif;
+}
+
+.bolinhas {
+    display: flex;
+}
+
+.bolinha-vermelha, .bolinha-laranja {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.bolinha-vermelha {
+    animation: respirar-vermelho 5s infinite;
+    animation-direction: alternate;
+}
+
+.bolinha-laranja {
+    margin-left: 30px;
+    animation: respirar-laranja 4s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes respirar-vermelho {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+        background-color:#e4001a;
+        opacity: 0.7;
+    }
+}
+
+@keyframes respirar-laranja {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+        background-color:#f0991a;
+        opacity: 0.7;
+    }
+}
