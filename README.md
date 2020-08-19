@@ -19,7 +19,7 @@ Repositório destinádo a centralizar as animações e designs implementados em 
 - [x] [Monstercard](./monstercard) - For those repos that doesn't have notthing yet <br/>
 <br/>
 
-![Monstercard](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Monstercard](https://share.getcloudapp.com/7KuLplgq)
 
 
 <br/>
