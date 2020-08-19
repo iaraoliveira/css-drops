@@ -1,13 +1,10 @@
 
 <div align="center">
-  <span>o treino diário de css</span>
-  <h1>NO CSS NO GAIN</h1>
+  <img src="./.github/cssdrops.png" alt="CSS Drops">
 </div> 
-
 <br/>
 
 Repositório destinádo a centralizar as animações e designs implementados em estudos com html e css.
-
 
 <br/>
 
