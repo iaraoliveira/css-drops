@@ -1,11 +1,8 @@
 
 <div align="center">
-  <h1>NO CSS NO GAIN</h1>
-  <br/>
   <span>o treino diário de css</span>
-</div>
-
---- 
+  <h1>NO CSS NO GAIN</h1>
+</div> 
 
 <br/>
 
@@ -16,7 +13,7 @@ Repositório destinádo a centralizar as animações e designs implementados em 
 
 **O que você vai encontrar aqui:**
 
-- [x] [Monstercard](./montercard) - For those repos that doesn't have notthing yet <br/>
+- [x] [Monstercard](./montercard) - Animação usando transitions e @keyframes <br/>
 
 
 <br/>
