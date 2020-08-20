@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="./.github/cssdrops.png" alt="CSS Drops">
+  <img src="./.github/cssdrops.png" alt="CSS Drops" width="300">
 </div> 
 <br/>
 
