@@ -15,7 +15,7 @@ Repositório destinádo a centralizar as animações e designs implementados em 
 
 
 <div align="center">
-    <img src="./monstercard/.github/monstercard.gif" alt="Monstercard" width="800" >
+    <img src="./.github/monstercard.gif" alt="Monstercard" width="800" >
 </div>
 
 <br/>
