@@ -8,7 +8,7 @@ Repositório destinádo a centralizar as animações e designs implementados em 
 
 <br/>
 
-**O que você vai encontrar aqui:**
+<!-- **O que você vai encontrar aqui:**
 
 
 - [x] [Monstercard](./monstercard) - Animação usando transitions e @keyframes <br/>
@@ -19,9 +19,10 @@ Repositório destinádo a centralizar as animações e designs implementados em 
 </div>
 
 <br/>
+-->
 <br/>
 <div align='center'>
   <strong>With :white_heart: by iara</strong>
   <br/>
   <a href="https://www.linkedin.com/in/iara/">Let's talk</a>
-</div>
+</div> 
