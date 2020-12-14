@@ -17,15 +17,31 @@ body {
 }
 
 
+
 .box {
     height: 120px;
     width: 200px;
     background-color: #fff;
     position: relative;
     top: 300px;
-    left: 50px;
-
+    left: 150px;
+}
+.b1, .b2 {
+    background-color: #fff;
+    height: 7px;
+    width: 50px;
+    position: relative;
+}
+.b1 {
+    right: 48px;
+    transform: rotate(-20deg);
+    transform-origin: right;
+}
+.b2 {
+    left: 198px;
+    bottom: 7px;
+    transform: rotate(20deg);
+    transform-origin: left;
 }
 
-.b1 {}
-.b2 {}
+
