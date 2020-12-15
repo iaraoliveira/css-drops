@@ -4,6 +4,8 @@ body {
     margin: 0;
 }
 
+/* CONTAINER */
+
 .container {
     height: 500px;
     width: 500px;
@@ -17,6 +19,7 @@ body {
 }
 
 
+/* CAIXA */
 
 .box {
     height: 120px;
@@ -45,3 +48,54 @@ body {
 }
 
 
+/* GATINHO */
+
+.cat {
+    position: relative;
+
+
+    /* bottom: 60px; */
+    bottom: 100px;
+    left: 40px;
+
+    z-index: -1;
+}
+
+.face {
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.lower {
+    height: 40px;
+    width: 140px;
+    background: red;
+    border-radius: 0 0 140px 140px;
+    position: relative;
+    top: 60px;
+    right: 10px;
+}
+
+.ear-l, .ear-r {
+    height: 0;
+    width: 0;
+    border-bottom: 37px solid red;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: relative;
+}
+
+.ear-l {
+    bottom: 50px;
+    right: 15px;
+    transform: rotate(-47deg);
+}
+
+.ear-r {
+    bottom: 85px;
+    left: 95px;
+
+    transform: rotate(47deg);
+}
