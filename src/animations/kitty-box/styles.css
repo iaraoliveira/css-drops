@@ -19,6 +19,23 @@ body {
 }
 
 
+.shadow {
+    height: 40px;
+    width: 240px;
+    background-color: #888888;
+    position: relative;
+
+    top: 280px;
+    left: 130px;
+
+    border-radius: 50%;
+
+    z-index: -1;
+
+    opacity: .5;
+}
+
+
 /* CAIXA */
 
 .box {
@@ -28,6 +45,8 @@ body {
     position: relative;
     top: 300px;
     left: 150px;
+
+    /* box-shadow: 0px 0px 3px #333; */
 }
 .b1, .b2 {
     background-color: #fff;
@@ -49,13 +68,12 @@ body {
 
 
 /* GATINHO */
-
 .cat {
     position: relative;
+    transition: .2s;
 
-
-    /* bottom: 60px; */
-    bottom: 100px;
+    bottom: 50px;
+    /* bottom: 100px; */
     left: 40px;
 
     z-index: -1;
@@ -64,24 +82,25 @@ body {
 .face {
     height: 120px;
     width: 120px;
-    background-color: red;
+    background-color: #fff;
     border-radius: 50%;
 }
 
 .lower {
     height: 40px;
     width: 140px;
-    background: red;
+    background: #fff;
     border-radius: 0 0 140px 140px;
     position: relative;
     top: 60px;
     right: 10px;
 }
 
+/*  ears */
 .ear-l, .ear-r {
     height: 0;
     width: 0;
-    border-bottom: 37px solid red;
+    border-bottom: 35px solid #fff;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: relative;
@@ -89,13 +108,95 @@ body {
 
 .ear-l {
     bottom: 50px;
-    right: 15px;
-    transform: rotate(-47deg);
+    right: 12px;
+    transform: rotate(-45deg);
 }
 
 .ear-r {
     bottom: 85px;
-    left: 95px;
-
-    transform: rotate(47deg);
+    left: 92px;
+    transform: rotate(45deg);
 }
+
+
+/*  eyes  */
+.eye-l, .eye-r {
+    height: 20px;
+    width: 18px;
+    position: relative;
+}
+
+.eye-l {
+    bottom: 65px;
+    left: 17px;
+}
+.eye-r {
+    bottom: 85px;
+    left: 83px;
+}
+
+.eye {
+    background-color: #262626;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+@keyframes blink {
+    20% {
+        transform: scaleY(0)
+    }
+}
+
+
+/*  nose  */
+.nose {
+    width: 0;
+    height: 0;
+    border-top: 10px solid #888888;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: relative;
+    bottom: 82px;
+    left: 50px;
+}
+
+
+/*  hat */
+
+.hat {
+    height: 35px;
+    width: 30px;
+    position: relative;
+    background-color: #888888;
+    transform: rotate(15deg);
+    bottom: 140px;
+    left: 70px;
+}
+
+.brim {
+    height: 5px;
+    width: 40px;
+    position: relative;
+    background-color: #888888;
+    top:30px;
+    right: 5px;
+
+}
+
+
+/* ANIMATIONS */
+
+.box:hover .cat{
+    bottom: 100px;
+    transition: .6s;
+}
+
+.box:active .cat{
+    bottom: 105px;
+    transition: .3s;
+} 
+
+.box:active .eye{
+    animation: blink .5s;
+} 
