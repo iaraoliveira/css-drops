@@ -1,15 +1,14 @@
+
 body {
     background-color: #000;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-/* CONTAINER */
-
 .container {
-    height: 500px;
-    width: 500px;
-    border: 5px solid white;
+    height: 500px;   
+    width: 500px;   
+    border: 5px solid #fff;
     position: absolute;
     margin: auto;
     top: 0;
@@ -18,65 +17,66 @@ body {
     right: 0;
 }
 
-
-.shadow {
-    height: 40px;
-    width: 240px;
-    background-color: #888888;
-    position: relative;
-
-    top: 280px;
-    left: 130px;
-
-    border-radius: 50%;
-
-    z-index: -1;
-
-    opacity: .5;
-}
-
-
 /* CAIXA */
-
 .box {
     height: 120px;
     width: 200px;
-    background-color: #fff;
+    background-color: #888;
+
     position: relative;
     top: 300px;
-    left: 150px;
-
-    /* box-shadow: 0px 0px 3px #333; */
+    left: 150px
 }
+
 .b1, .b2 {
-    background-color: #fff;
     height: 7px;
     width: 50px;
+    background-color: #888;
     position: relative;
 }
+
 .b1 {
     right: 48px;
     transform: rotate(-20deg);
     transform-origin: right;
 }
+
 .b2 {
-    left: 198px;
+    left: 198px;   
     bottom: 7px;
     transform: rotate(20deg);
     transform-origin: left;
 }
 
 
-/* GATINHO */
+.shadow {
+    height: 40px;
+    width: 240px;
+    background-color: #888;
+    
+    border-radius: 50%;
+    
+    position: relative;
+
+    top: 280px;
+    left: 130px;
+
+    opacity: .5;
+    z-index: -1;
+}
+
+
+/* GATINEO */
+
 .cat {
     position: relative;
-    transition: .2s;
 
     bottom: 50px;
-    /* bottom: 100px; */
-    left: 40px;
+    left:40px;
 
     z-index: -1;
+
+    transition: .2s;
 }
 
 .face {
@@ -89,20 +89,22 @@ body {
 .lower {
     height: 40px;
     width: 140px;
-    background: #fff;
+    background-color: #fff;
+
     border-radius: 0 0 140px 140px;
+
     position: relative;
     top: 60px;
-    right: 10px;
+    right: 10px;    
 }
 
-/*  ears */
 .ear-l, .ear-r {
     height: 0;
     width: 0;
     border-bottom: 35px solid #fff;
-    border-left: 20px solid transparent;
     border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+
     position: relative;
 }
 
@@ -119,7 +121,6 @@ body {
 }
 
 
-/*  eyes  */
 .eye-l, .eye-r {
     height: 20px;
     width: 18px;
@@ -128,19 +129,62 @@ body {
 
 .eye-l {
     bottom: 65px;
-    left: 17px;
+    left: 17px
 }
+
 .eye-r {
     bottom: 85px;
-    left: 83px;
+    left: 83px
 }
 
 .eye {
     background-color: #262626;
     height: 100%;
     width: 100%;
+
     border-radius: 50%;
 }
+
+.nose {
+    height: 0;
+    width: 0;
+    border-top: 10px solid #8888;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    position: relative;
+
+    bottom: 82px;
+    left: 50px;
+}
+
+/* CHAPÉU */
+
+.hat {
+    height: 35px;
+    width: 30px;
+
+    position: relative;
+    background-color:  #888;
+
+    bottom: 140px;
+    left: 70px;
+
+    transform: rotate(15deg);
+}
+
+.brim {
+    height: 5px;
+    width: 40px;
+    position: relative;
+    background-color:  #888;
+
+    top: 30px;
+    right: 5px;
+}
+
+
+/* ANIMATIONS */
 
 @keyframes blink {
     20% {
@@ -148,55 +192,16 @@ body {
     }
 }
 
-
-/*  nose  */
-.nose {
-    width: 0;
-    height: 0;
-    border-top: 10px solid #888888;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    position: relative;
-    bottom: 82px;
-    left: 50px;
-}
-
-
-/*  hat */
-
-.hat {
-    height: 35px;
-    width: 30px;
-    position: relative;
-    background-color: #888888;
-    transform: rotate(15deg);
-    bottom: 140px;
-    left: 70px;
-}
-
-.brim {
-    height: 5px;
-    width: 40px;
-    position: relative;
-    background-color: #888888;
-    top:30px;
-    right: 5px;
-
-}
-
-
-/* ANIMATIONS */
-
-.box:hover .cat{
+.box:hover .cat {
     bottom: 100px;
-    transition: .6s;
+    transition: .5s
 }
 
-.box:active .cat{
-    bottom: 105px;
-    transition: .3s;
-} 
+.box:active .eye {
+    animation: blink 1s ;
+}
 
-.box:active .eye{
-    animation: blink .5s;
-} 
+.box:active .cat {
+    bottom: 105px;
+    transition: .5s
+}
