@@ -87,6 +87,7 @@ body {
 
     background: #376C41;
     border-radius: 50% 50% 50% 50% / 80% 80% 20% 20%  ;
+    animation: back-leg-animation 3s infinite;
 
     bottom: 25px;
     left: 40px; 
@@ -113,15 +114,16 @@ body {
 .f1 {
     background: #458751;
     z-index: -1;
+    animation: front-leg-animation 3s infinite;
 }
 
 .f2 {
     bottom: 7px;
     right: 10px;
     background: #376C41;
-    /* background: #295130 */
-    ;
+    /* background: #295130; */
     z-index: -2;
+    animation: back-leg-animation 3s infinite;
 }
 
 .shadow {
@@ -132,10 +134,69 @@ body {
     opacity: .5;
     
     border-radius: 50%;
-    
 
     top: 155px;
     left: 130px;
 
     z-index: -3;
 }
+
+
+
+/* ------ */
+
+
+@keyframes front-leg-animation {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+    }
+  
+    50% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    75% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+  }
+
+@keyframes back-leg-animation {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
+    }
+  
+    50% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    75% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+  }
+  
