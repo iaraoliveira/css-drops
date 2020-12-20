@@ -93,38 +93,33 @@ body {
     
     height: 0;
     width: 0;
-    z-index: 1;
+    z-index: -1;
     
 }
 
 .s1, .s2, .s3 {
     position: relative;
-    /* background: #295130; */
 
     border-bottom: 20px solid #295130;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    /* border-radius: 4px; */
 }
 
 .s1 {
-    /* bottom: 160px;
-    left: 40px;
-    transform: rotate(-10deg); */
     transform: rotate(-82deg);
-    bottom: 120px;
+    bottom: 118px;
     right: 8px;
 }
 .s2 {
-    transform: rotate(-82deg);
-    bottom: 100px;
-    right: 14px;
+    transform: rotate(-83deg);
+    bottom: 98px;
+    right: 13px;
 }
 
 .s3 {
     transform: rotate(-82deg);
-    bottom: 80px;
-    right: 19px;
+    bottom: 78px;
+    right: 18px;
 }
 
 
@@ -146,8 +141,6 @@ body {
 
 .feet {
     position: relative;
-    /* bottom: 80px; */
-    
     display: flex;
     justify-content: center;
 }
@@ -193,8 +186,7 @@ body {
 }
 
 
-
-/* ------ */
+/* ANIMATIONS */
 
 
 @keyframes bouncing  {
