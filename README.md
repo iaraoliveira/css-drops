@@ -35,8 +35,8 @@ That's why this project was created. To have a place to group all the animations
 Feel free to call it as you want to.. I like to call it CSS DROPS.
 
 <div align="center">
-  <img src="./.github/cssdropsproject.png" alt="Template do projeto" width="300">
-  <span>website's template, avaiable on Figma</span>
+  <img src="./.github/cssdropsproject.png" alt="Template do projeto" width="800">
+  <p>website's template, avaiable on Figma</p>
 </div>
 
 <br/>
