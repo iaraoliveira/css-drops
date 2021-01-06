@@ -34,10 +34,12 @@
 
   Assim, está em andamento a criação de um site simples, porém animado. Dispondo algumas animações feitas em HTML e CSS. 
 
+  <!-- 
   <div align="center">
     <img src="./.github/cssdropsproject.png" alt="Template do projeto" width="800">
     <p>Template do projeto, feito no Figma</p>
-  </div>
+  </div> 
+  -->
 
 <br/>
 <a name="tecnologias"/>
