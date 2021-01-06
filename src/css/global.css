@@ -1,8 +1,66 @@
-* {
+html, body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #2a2a2a;
-    list-style:none;
-    vertical-align:baseline;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background-color: #222222;
+
+    height: 100%;
+}
+
+.page-container {
+    height: 100%;
+    display: grid;
+}
+
+.page-container a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #8C9299;
+}
+
+.page-container > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 55px;
+    padding: 25px;
+}
+
+.header {
+    align-self: start;
+    margin-top: 55px;
+}
+
+.footer {
+    align-self: end;
+    margin-bottom: 55px;
+}
+
+
+/*  CARDS  */
+
+.content > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .card {
+    width: 445px;
+    height: 482px;
+    background: #444444;
+    margin: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .card.selected > a {
+    color: green;
 }

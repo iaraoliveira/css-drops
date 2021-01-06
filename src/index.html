@@ -6,29 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2a2a2a">
     <title>CSS Drops</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="css/global.css">
+
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li>
-                <a href="animations/dino-walk/index.html" style="color: white;">Dino walk</a>
-            </li>
-            <li>
-                <a href="animations/kitty-box/index.html" style="color: white;">Kitty Box</a>
-            </li>
-            <li>
-                <a href="animations/monstercard/index.html" style="color: white;">Monstercard</a>
-            </li>
-            <li>
-                <a href="animations/carousel/index.html" style="color: white;">Carousel</a>
-            </li>
-            <!-- <li>
-                <a href="animations/moon-fases/index.html" style="color: white;">Moon Fases (under construction)</a>
-            </li> -->
-        </ul>
-    </header>
+
+    <div class="page-container">
+
+        <div class="header">
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+        </div>
+        <div class="content">
+            <ul>
+                <li class="card">
+                    <a href="animations/dino-walk/index.html">Dino walk</a>
+                </li>
+                <li class="card selected">
+                    <a href="animations/kitty-box/index.html">Kitty Box</a>
+                </li>
+                <li class="card">
+                    <a href="animations/monstercard/index.html">Monstercard</a>
+                </li>
+                <li class="card">
+                    <a href="animations/carousel/index.html">Carousel</a>
+                </li>
+                <!-- <li>
+                    <a href="animations/moon-fases/index.html" style="color: white;">Moon Fases (under construction)</a>
+                </li> -->
+            </ul>
+        </div>
+        <div class="footer">
+            <a href="">SCROLL</a>
+            <a href="" class="switch-button"><img src="./assets/light.svg" alt="light mode"></a>
+        </div>
+        
+    </div>
 
 </body>
 
