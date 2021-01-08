@@ -41,26 +41,50 @@ html, body{
 
 
 /*  CARDS  */
+.content {}
 
-.content > ul {
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    perspective: 1000px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-direction: row;
+    
+    transform-style: preserve-3d;
 }
 
-.content .card {
+.carousel > .card {
+    background: #444444;
+
     width: 445px;
     height: 482px;
-    background: #444444;
-    margin: 5px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    position: absolute;
+
+    opacity: 0.5;
 }
 
-.content .card.selected > a {
-    color: green;
+.carousel > .card:nth-child(1) { transform: translateZ(-100px) translateX(-50%) }
+.carousel > .card:nth-child(2) { transform: translateZ(0px) translateX(0px)}
+.carousel > .card:nth-child(3) { transform: translateZ(-100px) translateX(50%) }
+
+
+.carousel > .card.selected {
+    opacity: 1;
+
 }
